@@ -27,7 +27,7 @@ public class HelloWorldConfig {
     @Bean
     public Job helloWorldJob() {
         return jobBuilderFactory.get("helloWorldJob")
-                .incrementer(new RunIdIncrementer()) // 강제로 매번 다른 ID 부여 -> 파라미터
+//                .incrementer(new RunIdIncrementer()) // 강제로 매번 다른 ID 부여 -> 파라미터
                 .start(helloWorldStep1())
                 .next(helloWorldStep2())
                 .build();
