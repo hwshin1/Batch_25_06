@@ -63,6 +63,11 @@ public class HelloWorldConfig {
     public Tasklet helloWorldTasklet2() {
         return (StepContribution contribution, ChunkContext chunkContext) -> {
             System.out.println("헬로월드22!!");
+
+            if (true) {
+                throw new Exception("실패 : 헬로월드 태스클릿 2 실패");
+            }
+
             return RepeatStatus.FINISHED;
         };
     }
