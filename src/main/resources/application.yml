@@ -1,7 +1,7 @@
 spring:
   batch:
     job:
-      names: ${job.name:helloWorldJob}
+      name: ${job.name:NONE}
     jdbc:
       initialize-schema: always
       isolation-level-for-create: default
