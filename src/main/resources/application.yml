@@ -12,3 +12,6 @@ spring:
     password: ""
   jpa:
     show-sql: true
+logging:
+  level:
+    com.koreait.exam.batch_25_06.Batch2506Application: debug
