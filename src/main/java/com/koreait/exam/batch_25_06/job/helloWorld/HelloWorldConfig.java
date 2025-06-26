@@ -53,7 +53,7 @@ public class HelloWorldConfig {
     @Bean
     @JobScope
     public Step helloWorldStep2() {
-        return stepBuilderFactory.get("helloWorldStep1")
+        return stepBuilderFactory.get("helloWorldStep2")
                 .tasklet(helloWorldTasklet2())
                 .build();
     }
